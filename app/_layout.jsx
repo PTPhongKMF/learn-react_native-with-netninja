@@ -9,16 +9,17 @@ export default function RootLayout() {
 
   return (
     <>
-<StatusBar value="auto" />
+      <StatusBar value="auto" />
 
-    <Stack screenOptions={{
+      <Stack screenOptions={{
         headerStyle: { backgroundColor: theme.bg },
         headerTintColor: theme.text
       }}>
-        <Stack.Screen name="index" options={{ title: "Home" }}/>
-        <Stack.Screen name="about" options={{ title: "About" }}/>
+        <Stack.Screen name="index" options={{ title: "Home" }} />
+        <Stack.Screen name="about" options={{ title: "About" }} />
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
       </Stack>
     </>
-      
+
   )
 }
