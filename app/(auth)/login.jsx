@@ -1,11 +1,14 @@
 import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
+import { navigate } from 'expo-router/build/global-state/routing';
 
 export default function Login() {
 
   function handleSubmit() {
     console.log("submitted!");
+
+    navigate("/dashboard");
   }
 
   return (
